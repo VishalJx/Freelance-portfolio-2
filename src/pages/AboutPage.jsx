@@ -52,7 +52,7 @@ const AboutPage = () => {
                         matches my skills and experience then don't hesitate 
                         to contact me.
                     </h4>
-                    <button className='uppercase text-white px-10 py-3 font-extrabold rounded-lg tracking-wide bg-primary-100 mt-4 lgl:mt-6'>
+                    <button className='uppercase text-white px-10 py-3 font-extrabold rounded-lg tracking-wide bg-primary-100 mt-4 lgl:mt-6 hover:bg-primary-200 hover:shadow-lg duration-200'>
                         Contact
                     </button>
                 </div>

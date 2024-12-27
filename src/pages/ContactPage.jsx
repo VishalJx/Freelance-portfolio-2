@@ -48,7 +48,7 @@ const ContactPage = () => {
               animate={{opacity: 1, y:0}}
               transition={{delay: 0.5, duration: 0.6}}
               >
-                Projects
+                Submit
             </motion.button>
         </form>
     </section>  )
