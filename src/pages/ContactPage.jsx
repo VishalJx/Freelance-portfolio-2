@@ -12,7 +12,7 @@ const ContactPage = () => {
             what I do, and my current skills mostly in 
             terms of programming and technology
         </p>
-        <form className='lgl:w-[40%] flex flex-col gap-8 bg-secondary-100 h-[60vh] p-8 rounded-lg shadow-lg'>
+        <form className='w-full lgl:w-[40%] sml:w-[70%] flex flex-col gap-8 bg-secondary-100 h-[60vh] p-8 rounded-lg shadow-lg'>
           <div className='flex flex-col gap-3'>
             <label htmlFor="name" className='text-sm font-semibold'>Name</label>
             <input 
