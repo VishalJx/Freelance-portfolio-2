@@ -22,14 +22,15 @@ const HomePage = () => {
             {homePage.description} 
         </motion.p>
         <span className='mx-auto mb-16'>
-            <motion.button 
-              className='uppercase text-white px-20 py-4 font-extrabold rounded-md tracking-wide bg-primary-100 hover:bg-primary-200 hover:shadow-lg duration-200'
+            <motion.a 
+              className='uppercase text-white px-20 py-6 font-extrabold rounded-md tracking-wide bg-primary-100 hover:bg-primary-200 hover:shadow-lg duration-200'
+              href="#projects"
               initial={{opacity: 0, y:10}}
               animate={{opacity: 1, y:0}}
               transition={{delay: 0.5, duration: 0.6}}
               >
                 Projects
-            </motion.button>
+            </motion.a>
         </span>
     </section>
   )

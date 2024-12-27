@@ -25,9 +25,12 @@ const AboutPage = () => {
                             </h4>
                         ))
                     }
-                    <button className='uppercase text-white px-10 py-3 font-extrabold rounded-lg tracking-wide bg-primary-100 mt-4 lgl:mt-6 hover:bg-primary-200 hover:shadow-lg duration-200'>
+                    <a 
+                        className='uppercase text-white px-10 py-3 font-extrabold rounded-lg tracking-wide bg-primary-100 mt-4 lgl:mt-6 hover:bg-primary-200 hover:shadow-lg duration-200'
+                        href='#contact'
+                    >
                         Contact
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className='lgl:w-1/2 flex flex-col gap-5 lgl:gap-8 items-center lgl:items-start mt-5 lgl:mt-0 lgl:ml-16 lgl:pl-7'>
