@@ -21,7 +21,7 @@ const ProjectPage = () => {
               <img src={project.img} alt="" className={`w-[40rem] mt-8 object-contain shadow-md ${index%2===0?"":""}`}/>
           </div>
           <div className={`w-full lgl:w-1/2 flex flex-col gap-2 lgl:justify-between
-              items-end text-right transform lgl:${index%2===0?" lgl:-translate-x-16":" lgl:translate-x-16 mdl:-translate-x-0 sm:-translate-x-0"} z-20`}>
+              lgl:items-end text-right transform lgl:${index%2===0?" lgl:-translate-x-16":" lgl:translate-x-16 mdl:-translate-x-0 sm:-translate-x-0"} lgl:mt-0 mdl:mt-10 sml:mt-10 z-20`}>
               <p className={`w-full text-sm text-primary-100 font-semibold transform lgl:text-right mdl:text-center sm:text-center ${index%2===0 ? '':' lgl:-translate-x-20 mdl:-translate-x-0 sm:-translate-x-0'}`}>Featured Project</p>
               <h3 className={`w-full text-xl font-bold lgl:text-right mdl:text-center sm:text-center ${index%2===0 ? '':' lgl:-translate-x-20 mdl:-translate-x-0 sm:-translate-x-0'} `}>{project.title}</h3>
               <p className={`bg-[#112240] max-h-[14rem] text-sm text-white font-medium md:text-base p-2 md:p-6 rounded-md xs:text-justify`}>

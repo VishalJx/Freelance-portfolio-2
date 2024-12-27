@@ -52,7 +52,7 @@ export const publicationsPage = [
 export const projectsPage = [
     {
         title: "Speech Transcription with User Diarization",
-        description: "Speech transcription system with user diarization...",
+        description: "Speech transcription system with user diarization. Speech transcription system with user diarization",
         techStack: ["Fast API", "Python", "NExtJs"],
         img: "/assets/project-1.png",
     },
@@ -66,16 +66,16 @@ export const projectsPage = [
 
 export const socialLinks = [
     {
-        name: "Linkedin",
-        link: "https://www.linkedin.com/in/priya-pal/",
-    },
-    {
         name: "Instagram",
         link: "https://www.instagram.com/priya_pal/",
     },
     {
+        name: "Linkedin",
+        link: "https://www.linkedin.com/in/priya-pal/",
+    },
+    {
         name: "Github",
-        link: "",
+        link: "https://www.github.com/VishalJx",
     },
 ];
 
