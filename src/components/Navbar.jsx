@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { profilePic } from '../utils/data';
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -47,7 +48,7 @@ const Navbar = () => {
       ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="flex items-center gap-3">
-        <span className="border w-12 h-12 bg-primary-300 rounded-full"></span>
+        <img src={profilePic} className="object-cover w-[3.4rem] h-[3.4rem] bg-primary-300 rounded-full"/>
         <p className="uppercase font-bold text-[0.95rem] text-secondary-500 mdl:text-sm sml:text-xs">
           Priya Pal
         </p>

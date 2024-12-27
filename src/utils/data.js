@@ -31,21 +31,21 @@ export const publicationsPage = [
         description: "This paper presents a novel approach for image steganography using cryptography...",
         date: "Published on 15th June 2021",
         link: "https://www.researchgate.net/publication/352732186_A_Novel_Approach_for_Image_Steganography_using_Cryptography",
-        img: "/public/assets/project-1.png",
+        img: "/assets/project-1.png",
     },
     {
         title: "A Survey on Image Steganography Techniques",
         description: "This paper presents a survey on image steganography techniques...",
         date: "Published on 25th May 2021",
         link: "https://www.researchgate.net/publication/352732186_A_Novel_Approach_for_Image_Steganography_using_Cryptography",
-        img: "https://www.image.com/image.jpg",
+        img: "/assets/project-1.png",
     },
     {
         title: "A Comparative Study of Image Steganography Techniques",
         description: "This paper presents a comparative study of image steganography techniques...",
         date: "Published on 10th May 2021",
         link: "https://www.researchgate.net/publication/352732186_A_Novel_Approach_for_Image_Steganography_using_Cryptography",
-        img: "https://www.image.com/image.jpg",
+        img: "/assets/project-1.png",
     },
 ];
 
@@ -60,7 +60,7 @@ export const projectsPage = [
         title: "Real-Time Object Detection with YOLOv4",
         description: "Real-time object detection system that uses the YOLOv4 model...",
         techStack: ["YOLOv4", "Python", "OpenCV"],
-        img: "/public/assets/project-2.png",
+        img: "/assets/project-1.png",
     },
 ];
 
