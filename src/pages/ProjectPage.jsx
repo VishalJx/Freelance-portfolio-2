@@ -5,7 +5,7 @@ const projectDetails = [
       title: "Speech Transcription with User Diarization",
       description: "Speech transcription system with user diarization that leverages machine learning technologies to provide precise, speaker-labeled transcripts. By integrating OpenAI's Whisper and advanced speaker recognition techniques, the project delivers high-quality transcription that can distinguish between multiple speakers in complex audio environments.",
       techStack: ["Fast API", "Python", "NExtJs"],
-      img: "/public/assets/project-1.png",
+      img: "/assets/project-1.png",
   },
   {
       title: "Real-Time Object Detection with YOLOv4",    
@@ -32,7 +32,7 @@ const projectDetails = [
       img: "/public/assets/project-5.png",
   },
   {
-      title: "Recommendation System with Collaborative Filtering",
+      title: "Recommendation System with Filtering",
       description: "Recommendation system that uses collaborative filtering to provide personalized recommendations to users. The project leverages the power of machine learning and data mining to provide accurate and efficient recommendation capabilities that can be used in a wide range of applications.",
       techStack: ["Collaborative Filtering", "Python", "Scikit-learn"],
       img: "/public/assets/project-6.png",
@@ -54,18 +54,18 @@ const ProjectPage = () => {
       {
         projectDetails.map((project, index) => (
         <div key={index} className={`${index%2 === 0 ?"flex lgl:flex-row sm:flex-row -translate-x-10 mdl:-translate-x-0 sm:-translate-x-0":"flex lgl:flex-row-reverse mdl:flex-row-reverse translate-x-10 md:translate-x-0 sm:translate-x-0"} lgl:max-w-contentContainer sm:px-10 mdl:flex-col mdl:items-center sm:flex-col sm:items-center justify-center`}>
-          <div className={`w-full max-h-[24rem] lgl:w-1/2 mdl:w-40% sm:w-30% bg-purple-300 border border-red-400`}>
-              <img src="/public/assets/project-1.png" alt="" className={`h-20 object-contain ${index%2===0?"":""}`}/>
+          <div className={`w-full h-[15rem] flex items-center lgl:w-1/2 mdl:w-40% sm:w-30% `}>
+              <img src="/assets/project-1.png" alt="" className={`w-[40rem] mt-8 object-contain shadow-md ${index%2===0?"":""}`}/>
           </div>
           <div className={`w-full lgl:w-1/2 flex flex-col gap-2 lgl:justify-between
               items-end text-right transform lgl:${index%2===0?" lgl:-translate-x-16":" lgl:translate-x-16 mdl:-translate-x-0 sm:-translate-x-0"} z-20`}>
-              <p className={`w-full text-sm text-primary-100 font-semibold transform lgl:text-right mdl:text-center sm:text-center ${index%2===0 ? '':' -translate-x-20 mdl:-translate-x-0 sm:-translate-x-0'}`}>Featured Project</p>
-              <h3 className={`w-full text-xl font-bold lgl:text-right mdl:text-center sm:text-center ${index%2===0 ? '':' -translate-x-20 mdl:-translate-x-0 sm:-translate-x-0'} `}>{project.title}</h3>
-              <p className={`bg-[#112240] text-sm text-white font-medium md:text-base p-2 md:p-6 rounded-md xs:text-justify`}>
+              <p className={`w-full text-sm text-primary-100 font-semibold transform lgl:text-right mdl:text-center sm:text-center ${index%2===0 ? '':' lgl:-translate-x-20 mdl:-translate-x-0 sm:-translate-x-0'}`}>Featured Project</p>
+              <h3 className={`w-full text-xl font-bold lgl:text-right mdl:text-center sm:text-center ${index%2===0 ? '':' lgl:-translate-x-20 mdl:-translate-x-0 sm:-translate-x-0'} `}>{project.title}</h3>
+              <p className={`bg-[#112240] max-h-[14rem] text-sm text-white font-medium md:text-base p-2 md:p-6 rounded-md xs:text-justify`}>
                   {project.description}
               </p>
               <ul className={`w-full text-xs mdl:justify-center sm:justify-center lgl:justify-end md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5
-                      -justify-between text-textDark ${index%2===0?"":"-translate-x-20 mdl:-translate-x-0 sm:-translate-x-0"}`}>                
+                      -justify-between text-textDark ${index%2===0?"":"lgl:-translate-x-20 mdl:-translate-x-0 sm:-translate-x-0"}`}>                
                 {
                   project.techStack.map((tech, index) => (
                     <li key={index} className='text-secondary-400 italic'>
