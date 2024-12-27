@@ -9,7 +9,7 @@ const PapersPage = () => {
             description: "This paper presents a novel approach for image steganography using cryptography. The proposed method uses a combination of cryptography and steganography techniques to hide the secret message within the cover image. The secret message is encrypted using a symmetric key algorithm, and the encrypted message is embedded into the cover image using the least significant bit (LSB) substitution technique. The experimental results show that the proposed method provides a high level of security and robustness against various attacks.",
             date: "Published on 15th June 2021",
             link: "https://www.researchgate.net/publication/352732186_A_Novel_Approach_for_Image_Steganography_using_Cryptography",
-            img: "https://www.image.com/image.jpg",
+            img: "/public/assets/project-1.png",
         },
         {
             title: "A Survey on Image Steganography Techniques",
@@ -38,11 +38,11 @@ const PapersPage = () => {
       <div className='w-[80%] lgl:max-w-lgContentContainer flex flex-col mt-12'>
         {
           paperContent.map((paper, index) => (
-            <div key={index} className='relative w-full flex lgl:flex-row mdl:flex-row sm:flex-col sm:items-center gap-6 border-t-2 border-purple-200 px-4 py-10 sm:pb-4
-              hover:bg-purple-100 hover:rounded-lg duration-200'>
+            <div key={index} className='relative w-full flex lgl:flex-row mdl:flex-row sm:flex-col sm:items-center gap-6 border-t-2 border-purple-300 px-4 py-10 lgl:pb-5 sm:pb-4
+              hover:bg-purple-100 rounded-xl duration-200'>
               <img 
-                className='lgl:w-[30%] mdl:w-[30%] sm:w-full lgl:h-80 mdl:h-80 sm:h-[8rem] border border-primary-100 rounded-md'
-                src='/public/assets/walpaper-1.jpg'
+                className='lgl:w-[30%] object-cover mdl:w-[30%] sm:w-full lgl:h-70 mdl:h-60 sm:h-[8rem] rounded-md'
+                src='/assets/project-1.png'
                 alt={paper.title}
                 >
               </img>
