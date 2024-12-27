@@ -12,7 +12,11 @@ const ContactPage = () => {
             what I do, and my current skills mostly in 
             terms of programming and technology
         </p>
-        <form className='w-full lgl:w-[40%] sml:w-[70%] flex flex-col gap-8 bg-secondary-100 h-[60vh] p-8 rounded-lg shadow-lg'>
+        <form 
+          className='w-full lgl:w-[40%] sml:w-[70%] flex flex-col gap-8 bg-secondary-100 h-[60vh] p-8 rounded-lg shadow-lg'
+          action='https://formspree.io/f/mqakjvke'
+          method='POST'
+        >
           <div className='flex flex-col gap-3'>
             <label htmlFor="name" className='text-sm font-semibold'>Name</label>
             <input 
@@ -44,6 +48,7 @@ const ContactPage = () => {
           </div>
           <motion.button 
               className='uppercase text-white px-20 py-4 font-extrabold rounded-md tracking-wide bg-primary-100 hover:bg-primary-200 hover:shadow-lg duration-200'
+              type="submit"
               initial={{opacity: 0, y:10}}
               animate={{opacity: 1, y:0}}
               transition={{delay: 0.5, duration: 0.6}}
