@@ -53,7 +53,7 @@ const ProjectPage = () => {
       <div className='flex flex-col gap-20'>
       {
         projectDetails.map((project, index) => (
-        <div key={index} className={`${index%2 === 0 ?"flex lgl:flex-row mdl:flex-row sm:flex-row -translate-x-10 mdl:-translate-x-0 sm:-translate-x-0":"flex lgl:flex-row-reverse mdl:flex-row-reverse translate-x-10 md:translate-x-0 sm:translate-x-0"} lgl:max-w-contentContainer sm:px-10 mdl:flex-col mdl:items-center sm:flex-col sm:items-center justify-center`}>
+        <div key={index} className={`${index%2 === 0 ?"flex lgl:flex-row sm:flex-row -translate-x-10 mdl:-translate-x-0 sm:-translate-x-0":"flex lgl:flex-row-reverse mdl:flex-row-reverse translate-x-10 md:translate-x-0 sm:translate-x-0"} lgl:max-w-contentContainer sm:px-10 mdl:flex-col mdl:items-center sm:flex-col sm:items-center justify-center`}>
           <div className={`w-full max-h-[24rem] lgl:w-1/2 mdl:w-40% sm:w-30% bg-purple-300 border border-red-400`}>
               <img src="/public/assets/project-1.png" alt="" className={`h-20 object-contain ${index%2===0?"":""}`}/>
           </div>
