@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { homePage } from '../utils/data'
 
 const HomePage = () => {
   return (
@@ -10,14 +11,15 @@ const HomePage = () => {
           initial={{opacity: 0, y:10}}
           animate={{opacity: 1, y:0}}
           transition={{delay: 0.5, duration: 0.6}}
-          >Hey, I'm Ram Maheshwari
+          >Hey, I'm {homePage.name}
         </motion.h1>
         <motion.p 
           className='lgl:text-lg sm:text-sm sm:px-2 font-medium tracking-wider lgl:max-w-[58rem] md:max-w-[45rem] text-center mx-auto'
           initial={{opacity: 0, y:10}}
           animate={{opacity: 1, y:0}}
           transition={{delay: 0.5, duration: 0.6}}
-          >A Result-Oriented Web Developer building and managing Websites and Web Applications that leads to the success of the overall product
+          >
+            {homePage.description} 
         </motion.p>
         <span className='mx-auto mb-16'>
             <motion.button 
